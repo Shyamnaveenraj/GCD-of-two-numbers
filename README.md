@@ -17,9 +17,18 @@ To write a program to find the GCD of two numbers using function.
 ```
 /*
 Program to find the gcd of two number using function.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by:Shyam Naveen Raj.M 
+RegisterNumber:21005660 
+*/def hcf(a, b):
+    if(b == 0):
+        return a
+    else:
+        return hcf(b, a % b)
+  
+a = int(input())
+b = int(input())
+
+print("GCD of two numbers is: ", hcf(a,b))
 ```
 
 ## Output:
